@@ -1,7 +1,25 @@
 ﻿/* JS */
-console.log("it opened!");
+
 $(document).ready(function() {
-console.log("it opened even better!");
+
+function centerVertical() {
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  var imgHeight = $('.projects img').outerHeight();
+  
+  $('.projects .para').each(function(index) {
+    var headlineHeight = 44;
+    var textHeight = headlineHeight + $(this).outerHeight();
+    var top = (imgHeight - textHeight)/2;
+    var numberClass = ".n" + (index+1).toString();
+    var finalClass = '.text' + numberClass;
+    if (viewportWidth > 990) {
+      $(finalClass).css("top", top);
+    } else {
+      $(finalClass).css("top", 0);
+    }
+  });
+}
+
 function changeWindowSize() {
   let sections = ['.skills', '.portfolio', '.projects', '.honorable_mentions', '.footer'];
 
@@ -16,20 +34,8 @@ function changeWindowSize() {
       $(elStr).css("margin-left", marginStr);
     }  
   })
+  centerVertical();
 }
-
-window.onload = function centerVertical() {
-  var imgHeight = $('.projects img').outerHeight();
-
-  $('.projects .para').each(function(index) {
-    var headlineHeight = 44;
-    var textHeight = headlineHeight + $(this).outerHeight();
-    var top = (imgHeight - textHeight)/2;
-    var numberClass = ".n" + (index+1).toString();
-    var finalClass = '.text' + numberClass;
-    $(finalClass).css("top", top);
-  });
-};
 
 function isInViewport(element) {
   var rect = element.getBoundingClientRect();
@@ -100,7 +106,7 @@ email.addEventListener("input", function (event) {
 });
 
 changeWindowSize();
-/*centerVertical();*/
+window.onload = centerVertical();
 window.addEventListener('resize', changeWindowSize);
 $('.open_form').on('click', function(){ changeFormVis(); });
 $('.footer button').click(function() {
