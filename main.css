@@ -4,7 +4,6 @@
     overflow-x: hidden;
 }
 /******************FONTS******************/
-/*
 @font-face {
   font-family: 'Avenir';
   src: url("fonts/AvenirLTProMedium.otf");
@@ -35,7 +34,6 @@
   font-weight: 100;
   font-style: normal;
 }
-*/
 @font-face {
   font-family: 'Avenir';
   src: url('AvenirLTPro-Medium.eot');
@@ -285,7 +283,12 @@ section {
   -ms-interpolation-mode: nearest-neighbor;
 }
 video {
-  width: 100vw;
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 177.77777778vh;
+  max-width: 100%;
+  max-height: 56.25vw;
 }
 .bio {
   background-color: black;
@@ -489,7 +492,7 @@ video {
 .projects .zombie.active, .projects .pulseox.active {
   opacity: 1;
   transform: translatey(0rem);
-  transition: transform 1200ms cubic-bezier(0.33, 1, 0.68, 1), opacity 600ms 400ms linear;
+  transition: transform 900ms cubic-bezier(0.33, 1, 0.68, 1), opacity 300ms 400ms linear;
   transition-delay: 300ms;
 }
 .projects .shadow {
@@ -499,7 +502,7 @@ video {
 .projects .shadow.active {
   opacity: 1;
   transform: translatey(0rem);
-  transition: opacity 600ms 400ms linear;
+  transition: opacity 300ms 400ms linear;
   transition-delay: 300ms;
 }
 .honorable_mentions .wrapper {
@@ -525,9 +528,9 @@ video {
   display: grid;
   z-index: 1;
   width: 950px;
-  grid-template-columns: [col1] 240px [col2] 230px;
+  grid-template-columns: [col1] 250px [col2] 230px;
   grid-template-rows: [row1] 100px [row2] 30px;
-  column-gap: 480px;
+  column-gap: 470px;
   row-gap: 20px;
 }
 .footer .box {
@@ -857,7 +860,7 @@ h9 {
 }
 .footer .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 240px 480px 230px;
+  -ms-grid-columns: 250px 470px 230px;
   -ms-grid-rows: 100px 20px 30px;
 }
 .footer .box1 {

@@ -1,9 +1,11 @@
-﻿$(document).ready(function() {
-
+﻿/* JS */
+console.log("it opened!");
+$(document).ready(function() {
+console.log("it opened even better!");
 function changeWindowSize() {
   let sections = ['.skills', '.portfolio', '.projects', '.honorable_mentions', '.footer'];
 
-  sections.forEach((section) => {
+  sections.forEach(function(section){
     var pageWidth = parseInt($('section').css('width'));
     var elStr = section + " " + ".wrapper";
     var gridWidth = parseInt($(elStr).css('width'));  
@@ -30,7 +32,7 @@ window.onload = function centerVertical() {
 };
 
 function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
+  var rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -39,29 +41,30 @@ function isInViewport(element) {
   );
 }
 
-const footsteps = ['.footsteps'];
-const skillsElements = ['.div', '.semicolon', '.brain', '.airplane'];
-const portfolioElements = ['.arrow', '.portfolio .shadow'];
-const zombie = ['.zombie', '.one .shadow'];
-const pulseOx = ['.pulseox', '.two .shadow'];
-const slideElements = [footsteps, skillsElements, portfolioElements, zombie, pulseOx];
-const slidePresent = [false, false, false, false, false];
+var footsteps = ['.footsteps'];
+var skillsElements = ['.div', '.semicolon', '.brain', '.airplane'];
+var portfolioElements = ['.arrow', '.portfolio .shadow'];
+var zombie = ['.zombie', '.one .shadow'];
+var pulseOx = ['.pulseox', '.two .shadow'];
+var slideElements = [footsteps, skillsElements, portfolioElements, zombie, pulseOx];
+var slidePresent = [false, false, false, false, false];
 
 $(window).on('scroll', function(e) {
   index = 0;
-  slideElements.forEach ( elem => {
+
+  slideElements.forEach(function(elem){
     var marker = document.querySelector(elem[0]);
     var isPresent = slidePresent[index];
     
       if (isInViewport(marker) && !isPresent) {
-        elem.forEach ( el => { 
+        elem.forEach(function(el){ 
           $(el).addClass('active');
         })
         slidePresent[index] = true;
       }
 /*
       else if (!isInViewport(marker) && isPresent) {
-        elem.forEach ( el => {
+        elem.forEach(function(el){
           $(el).removeClass('active');
           })
         slidePresent[index] = false;
@@ -87,7 +90,7 @@ function changeFormVis() {
   }
 }
 
-const email = document.getElementById("mail");
+var email = document.getElementById("mail");
 email.addEventListener("input", function (event) {
   if (email.validity.typeMismatch) {
     email.setCustomValidity("I am expecting an e-mail address!");
@@ -97,12 +100,11 @@ email.addEventListener("input", function (event) {
 });
 
 changeWindowSize();
-window.addEventListener('resize', changeWindowSize);
 /*centerVertical();*/
-$('.open_form').on('click', () => changeFormVis() );
+window.addEventListener('resize', changeWindowSize);
+$('.open_form').on('click', function(){ changeFormVis(); });
 $('.footer button').click(function() {
   $("html, body").animate({scrollTop: 0}, "slow");
   return false;
 });
-
 });
