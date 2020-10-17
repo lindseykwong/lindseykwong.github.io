@@ -127,8 +127,15 @@ html::-webkit-scrollbar {
   display: none;
 }
 html {
-  -ms-overflow-style: none;  /* IE and Edge */
+  /*-ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  scrollbar-base-color: rgb(242, 196, 206);
+  scrollbar-face-color: rgb(242, 196, 206);
+  scrollbar-3dlight-color: rgb(242, 196, 206);
+  scrollbar-highlight-color: rgb(242, 196, 206);;
+  scrollbar-track-color: black;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: rgb(242, 196, 206);;
 }
 ::-webkit-scrollbar {
   width: 10px;
