@@ -19,7 +19,7 @@ function centerVertical() {
     }
   });
 }
-
+window.onload = centerVertical();
 function changeWindowSize() {
   let sections = ['.skills', '.portfolio', '.projects', '.honorable_mentions', '.footer'];
 
@@ -106,7 +106,6 @@ email.addEventListener("input", function (event) {
 });
 
 changeWindowSize();
-window.onload = centerVertical();
 window.addEventListener('resize', changeWindowSize);
 $('.open_form').on('click', function(){ changeFormVis(); });
 $('.footer button').click(function() {
