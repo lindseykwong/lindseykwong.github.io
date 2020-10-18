@@ -285,7 +285,7 @@ section {
 video {
   display: block;
   margin: auto;
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   /*height: 100%;
@@ -350,7 +350,7 @@ video {
 .footer .content {
   position: relative;
   display: block;
-  top: 40px;
+  top: 30px;
 }
 .bio button {
   background-color: transparent;

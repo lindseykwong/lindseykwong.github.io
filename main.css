@@ -294,7 +294,7 @@ section {
 video {
   display: block;
   margin: auto;
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   /*height: 100%;
