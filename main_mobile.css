@@ -4,6 +4,7 @@
     overflow-x: hidden;
 }
 /******************FONTS******************/
+/*
 @font-face {
   font-family: 'Avenir';
   src: url("fonts/AvenirLTProMedium.otf");
@@ -46,6 +47,7 @@
   font-style: normal;
   font-display: swap;
 }
+*/
 @font-face {
   font-family: 'Calibri Mac';
   src: url('fonts/Calibri.ttf');
@@ -189,7 +191,7 @@ label {
   position: absolute;
   display: inline-block;
   color: rgb(50, 50, 50);
-  font-family: 'Avenir', 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 300;
   padding-top: 14px;
   padding-left: 16px;
@@ -198,7 +200,7 @@ label:hover {
   cursor: text;
 }
 input, textarea {
-  font-family: 'Avenir', 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   padding: 14px;
   box-sizing: border-box;
@@ -621,7 +623,7 @@ h1 {
 }
 p {
   color: rgb(255, 255, 255);
-  font-family: 'Avenir', 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 200;
   font-size: 14px;
   line-height: 18px;
