@@ -67,6 +67,7 @@
   position: fixed;
   top: 25px;
   left: 20px;
+  z-index: 999;
 }
 .logo {
   color: white;
@@ -284,6 +285,9 @@ section {
 video {
   display: block;
   margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   /*height: 100%;
   width: 177.77777778vh;
   max-width: 100%;
@@ -363,8 +367,11 @@ video {
   left: 580px;
   opacity: 0.2;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .bio img {
+    display: none;
+  }
+  .bio img.active {
     display: none;
   }
 }
