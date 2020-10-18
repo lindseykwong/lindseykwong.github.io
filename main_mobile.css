@@ -363,7 +363,7 @@ video {
   left: 580px;
   opacity: 0.2;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .bio img {
     display: none;
   }
