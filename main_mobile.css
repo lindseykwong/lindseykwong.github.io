@@ -158,7 +158,7 @@ html {
   display: block;
   position: relative;
   top: 12%;
-  width: 500px;
+  width: 350px;
   margin: 0 auto;
 }
 h10 {
@@ -168,11 +168,13 @@ h10 {
   font-size: 70px;
   line-height: 70px;
   color: rgb(242, 196, 206);
+  text-align: center;
   margin-bottom: 20px;
 }
 #contact_form p {
   color: rgb(220, 220, 220);
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 form {
   margin: 0 auto;
@@ -185,8 +187,7 @@ ul {
 }
 li {
   float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 label {
   position: absolute;
@@ -202,8 +203,8 @@ label:hover {
 }
 input, textarea {
   font-family: 'Nunito', sans-serif;
-  font-size: 15px;
-  padding: 14px;
+  font-size: 13px;
+  padding: 12px;
   box-sizing: border-box;
   border: 0px;
   border: 2px solid black;
@@ -213,16 +214,16 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 }
 #name, #mail {
   display: inline-block;
-  width: 230px;
+  width: 350px;
 }
 textarea {
   vertical-align: top;
-  height: 12em;
-  width: 480px;
-  margin-bottom: 30px;
+  height: 10em;
+  width: 350px;
+  margin-bottom: 20px;
 }
 .button {
-  padding: 0 170px;
+  padding: 0 110px;
   margin-bottom: 0;
 }
 #contact_form button {
@@ -238,7 +239,7 @@ textarea {
 li img {
   width: 150px;
   height: 60px;
-  padding: 0 155px;
+  padding: 0 95px;
 }
 /******************BUTTON UP******************/
 .footer button {
@@ -350,7 +351,7 @@ video {
 .footer .content {
   position: relative;
   display: block;
-  top: 20px;
+  top: 30px;
 }
 .bio button {
   background-color: transparent;
@@ -815,163 +816,124 @@ h9 {
 /* IE EXPLORER FORMATTING*/
 .skills .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 250px 250px 250px 250px;
-  -ms-grid-rows: 200px 50px 80px 100px;
+  -ms-grid-columns: 300px;
+  -ms-grid-rows: 130px 50px 80px 80px 150px 50px 80px 80px 200px 50px 80px 80px 140px 50px 80px 80px;
 }
 .skills .box1 {
-  -ms-grid-column: 1;
   -ms-grid-row: 1;
 }
 .skills .box2 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 1;
+  -ms-grid-row: 5;
 }
 .skills .box3 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 1;
+  -ms-grid-row: 9;
 }
 .skills .box4 {
-  -ms-grid-column: 4;
-  -ms-grid-row: 1;
+  -ms-grid-row: 13;
 }
 .skills .box5 {
-  -ms-grid-column: 1;
   -ms-grid-row: 2;
 }
 .skills .box6 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 2;
+  -ms-grid-row: 6;
 }
 .skills .box7 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 10;
 }
 .skills .box8 {
-  -ms-grid-column: 4;
-  -ms-grid-row: 2;
+  -ms-grid-row: 14;
 }
 .skills .box9 {
-  -ms-grid-column: 1;
   -ms-grid-row: 3;
 }
 .skills .box10 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 3;
+  -ms-grid-row: 7;
 }
 .skills .box11 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 3;
+  -ms-grid-row: 11;
 }
 .skills .box12 {
-  -ms-grid-column: 4;
-  -ms-grid-row: 3;
+  -ms-grid-row: 15;
 }
 .skills .box13 {
-  -ms-grid-column: 1;
   -ms-grid-row: 4;
   align-items: flex-start;
 }
 .skills .box14 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 4;
+  -ms-grid-row: 8;
   align-items: flex-start;
 }
 .skills .box15 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 4;
+  -ms-grid-row: 12;
   align-items: flex-start;
 }
 .skills .box16 {
-  -ms-grid-column: 4;
-  -ms-grid-row: 4;
+  -ms-grid-row: 16;
   align-items: flex-start;
 }
 .portfolio .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 650px 250px;
-  -ms-grid-rows: 330px 50px;
+  -ms-grid-columns: 350px;
+  -ms-grid-rows: 200px 90px 130px;
 }
 .portfolio .box1 {
-  -ms-grid-column: 1;
   -ms-grid-row: 1;
 }
 .portfolio .box2 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
 }
 .portfolio .box4 {
-  -ms-grid-column: 2;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
 }
 .projects .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 260px 30px 400px 30px 260px;
-  -ms-grid-rows: 500px 500px;
+  -ms-grid-columns: 330px;
+  -ms-grid-rows: 370px 200px 370px 200px;
 }
 .projects .box1 {
-  -ms-grid-column: 1;
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
 }
 .projects .box2 {
-  -ms-grid-column: 3;
   -ms-grid-row: 1;
 }
 .projects .box3 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
 }
 .projects .box4 {
-  -ms-grid-column: 5;
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
 }
 .honorable_mentions .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 230px 100px 230px 100px 230px;
-  -ms-grid-rows: 200px 70px 200px;
+  -ms-grid-columns: 230px;
+  -ms-grid-rows: 200px 70px 200px 70px 200px 70px 200px 70px 200px 70px 200px;
 }
 .honorable_mentions .box1 {
-  -ms-grid-column: 1;
   -ms-grid-row: 1;
 }
 .honorable_mentions .box2 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
 }
 .honorable_mentions .box3 {
-  -ms-grid-column: 5;
-  -ms-grid-row: 1;
+  -ms-grid-row: 5;
 }
 .honorable_mentions .box4 {
-  -ms-grid-column: 1;
-  -ms-grid-row: 3;
+  -ms-grid-row: 7;
 }
 .honorable_mentions .box5 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 3;
+  -ms-grid-row: 9;
 }
 .honorable_mentions .box6 {
-  -ms-grid-column: 5;
-  -ms-grid-row: 3;
+  -ms-grid-row: 11;
 }
 .footer .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 240px 480px 230px;
-  -ms-grid-rows: 100px 20px 30px;
+  -ms-grid-columns: 250px 100px;
+  -ms-grid-rows: 80px;
 }
 .footer .box1 {
   -ms-grid-column: 1;
-  -ms-grid-row: 1;
 }
 .footer .box2 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 1;
-}
-.footer .box3 {
-  -ms-grid-column: 1;
-  -ms-grid-row: 3;
-}
-.footer .box4 {
-  -ms-grid-column: 3;
-  -ms-grid-row: 3;
+  -ms-grid-column: 2;
 }
 /* END */

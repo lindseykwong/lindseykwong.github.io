@@ -20,7 +20,7 @@
       <span class="logo">lindsey wong</span>
     </div>
     <div class="contact">
-      <button class="x open_form">×</button>
+      <button class="x">×</button>
       <!--<a><i class="fas fa-times"></i></a>-->
       <a href="https://www.linkedin.com/in/lindseywong22"><i class="fab fa-linkedin-in"></i></a>
       <a href="http://www.github.io/lindseywong22"><i class="fab fa-github"></i></a>
@@ -222,6 +222,7 @@ From dynamic websites, to thoughtful UI/UX design, and nifty iOS apps, I will am
           <div class="box box3">
             <span class="quotation_mark">&lsquo;&lsquo;</span>
             <span class="quote"><span class="small">새꺄 쫄지 말어</span>, this is just your first flight.</span>
+            <span><button class="open_secret"><img class="wings" src="assets/butterfly.png"></button></span>
           </div>
           <div class="right box4">
             <p class="bold">© Lindsey Wong, 2020.</p>
@@ -229,35 +230,56 @@ From dynamic websites, to thoughtful UI/UX design, and nifty iOS apps, I will am
           </div>
         </div>
       </div>
-      <button><i class="fas fa-chevron-up"></i></button>
+      <button class="scroll_up"><i class="fas fa-chevron-up"></i></button>
     </section>
 
     <section id="contact_form">
       <div class="content">
         <h10>Let's Chat</h10>
         <p>
-           Interested in collaborating? Curious about past projects? Shoot me a <br>message! 
+           Interested in collaborating? Curious about past projects? Shoot me a message! 
            Let's grab a coffee, or hop on a call, and make something that'll change the world. 
         </p>
-    <form action="/lets-chat" method="post">
-      <ul>
-        <li>
-          <input type="text" placeholder="First Name" onfocus="this.value=\'\';" autocorrect="off" autocapitalize="words" id="name" name="user_name" required>
-        </li>
-        <li>
-          <input type="email" placeholder="Email" onfocus="this.value=\'\';" id="mail" name="user_email" required>
-        </li>
-        <li>
-          <textarea placeholder="Your message..." onfocus="this.value=\'\';" id="msg" name="user_message" required></textarea>
-        </li>
-        <li class="button">
-          <button type="submit" onclick="closeForm()">SEND</button>
-        </li>
-        <li>
-          <img src="assets/shadow.png" alt="Shadow">
-        </li>
-      </ul>
-    </form>
+        <form action="/lets-chat" method="post">
+          <ul>
+            <li>
+              <input type="text" placeholder="First Name" onfocus="this.value=\'\';" autocorrect="off" autocapitalize="words" id="name" name="user_name" required>
+            </li>
+            <li>
+              <input type="email" placeholder="Email" onfocus="this.value=\'\';" id="mail" name="user_email" required>
+            </li>
+            <li>
+              <textarea placeholder="Your message..." onfocus="this.value=\'\';" id="msg" name="user_message" required></textarea>
+            </li>
+            <li class="button">
+              <button type="submit" onclick="closeForm()">SEND</button>
+            </li>
+            <li>
+              <img src="assets/shadow.png" alt="Shadow">
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
+    <section id="hidden_page">
+      <!--<div class="content_background">
+        <img src="assets/butterfly.png" alt="Wings">
+      </div>-->
+      <div class="content">
+        <h11>The Hidden Page</h11>
+        <p class="subhead">So you were intrigued by the Korean...</p>
+        <p class="quote"><span class="quotation_mark">&lsquo;&lsquo;</span>새꺄 쫄지 말어, this is just your first flight.<span class="quotation_mark">&rsquo;&rsquo;</span></p>
+        <p>
+<span class="italics">Don’t be scared, this is just your first flight.</span><br> 
+A scrap of lyrical inspiration from my ultimate hype song, I put this quote on my portfolio website to remind myself to not be afraid.<br>  
+To be bold!<br>  
+To fight for the career I want.<br> <br>  
+
+Career pivots will be haunted by fears of the unknown, and of failure - but this is only my first flight.<br>  
+My wings will grow with time.<br> 
+Believe in myself and the path I chose.<br> 
+        </p>
       </div>
     </section>
   </div>
