@@ -753,7 +753,7 @@ h9 {
 /******************CONTACT FORM******************/
 #hidden_page {
   display: none;
-  background-color: rgba(0, 0, 0, .92);
+  background-color: rgba(0, 0, 0, .98);
   position: fixed;
   z-index: 998;
   left: 0;
