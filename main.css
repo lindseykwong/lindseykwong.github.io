@@ -956,7 +956,7 @@ h11 {
 }
 .footer .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 270px 450px 230px;
+  -ms-grid-columns: 320px 400px 230px;
   -ms-grid-rows: 100px 20px 30px;
 }
 .footer .box1 {

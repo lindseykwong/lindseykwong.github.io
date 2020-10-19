@@ -19,8 +19,6 @@ $(document).ready(function() {
     });
   };
   
-  /*window.onload = centerVertical();*/
-  
   function changeWindowSize() {
   console.log($(window).width());
     let sections = ['.skills', '.portfolio', '.projects', '.honorable_mentions', '.footer'];
@@ -36,7 +34,21 @@ $(document).ready(function() {
         $(elStr).css("margin-left", marginStr);
       }  
     })
-    /*centerVertical();*/
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    var imgHeight = $('.projects img').outerHeight();
+  
+    $('.projects .para').each(function(index) {
+      var headlineHeight = 44;
+      var textHeight = headlineHeight + $(this).outerHeight();
+      var top = (imgHeight - textHeight)/2;
+      var numberClass = ".n" + (index+1).toString();
+      var finalClass = '.text' + numberClass;
+      if (viewportWidth > 990) {
+        $(finalClass).css("top", top);
+      } else {
+        $(finalClass).css("top", 0);
+      }
+    });
   }
   
   function isInViewport(element) {

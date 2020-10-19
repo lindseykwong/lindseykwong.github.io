@@ -689,7 +689,7 @@ h4 {
   font-size: 40vw;
   letter-spacing: -1vw;
   line-height: 50px;
-  text-align: right;
+  text-align: center;
   margin: 0;
 }
 @media only screen and (min-width: 500px) {
@@ -877,14 +877,17 @@ h9 {
 }
 .portfolio .wrapper {
   display: -ms-grid;
-  -ms-grid-columns: 350px;
-  -ms-grid-rows: 200px 90px 130px;
+  -ms-grid-columns: 100vw;
+  -ms-grid-rows: 150px 200px 130px;
 }
 .portfolio .box1 {
   -ms-grid-row: 1;
+  text-align: center;
 }
 .portfolio .box2 {
   -ms-grid-row: 2;
+  align-items: center;
+  justify-content: center;
 }
 .portfolio .box4 {
   -ms-grid-row: 3;
