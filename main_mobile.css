@@ -813,6 +813,10 @@ h9 {
   line-height: 12px;
   z-index: -1;
 }
+/******************HIDDEN PAGE******************/
+#hidden_page {
+  display: none;
+}
 /* IE EXPLORER FORMATTING*/
 .skills .wrapper {
   display: -ms-grid;

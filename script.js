@@ -1,7 +1,7 @@
 ﻿/* JS */
 $(document).ready(function() {
 
-  function centerVertical() {
+  window.onload = function centerVertical() {
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     var imgHeight = $('.projects img').outerHeight();
   
@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
   };
   
-  window.onload = centerVertical();
+  /*window.onload = centerVertical();*/
   
   function changeWindowSize() {
   console.log($(window).width());
@@ -36,7 +36,7 @@ $(document).ready(function() {
         $(elStr).css("margin-left", marginStr);
       }  
     })
-    centerVertical();
+    /*centerVertical();*/
   }
   
   function isInViewport(element) {
