@@ -4,61 +4,6 @@
     overflow-x: hidden;
 }
 /******************FONTS******************/
-/*
-@font-face {
-  font-family: 'Avenir';
-  src: url("fonts/AvenirLTProMedium.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url("fonts/AvenirLTStd-Book.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url("fonts/AvenirLT-LightOblique.ttf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url("fonts/AvenirLT-Light.ttf");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url("fonts/AvenirNextLTProUltraLight.ttf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url('AvenirLTPro-Medium.eot');
-  src: url('AvenirLTPro-Medium.eot?#iefix') format('embedded-opentype'),
-      url('AvenirLTPro-Medium.woff2') format('woff2'),
-      url('AvenirLTPro-Medium.woff') format('woff'),
-      url('AvenirLTPro-Medium.ttf') format('truetype'),
-      url('AvenirLTPro-Medium.svg#AvenirLTPro-Medium') format('svg');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Avenir';
-  src: url('AvenirLT-Light.eot');
-  src: url('AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
-      url('AvenirLT-Light.woff2') format('woff2'),
-      url('AvenirLT-Light.woff') format('woff'),
-      url('AvenirLT-Light.ttf') format('truetype'),
-      url('AvenirLT-Light.svg#AvenirLT-Light') format('svg');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}*/
 @font-face {
   font-family: 'Calibri Mac';
   src: url('fonts/Calibri.ttf');
@@ -132,7 +77,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 html {
-  /*-ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   scrollbar-base-color: rgb(242, 196, 206);
   scrollbar-face-color: rgb(242, 196, 206);
@@ -270,16 +214,10 @@ li img {
   top: 0;
 }
 /******************COLORS******************/
-.darkgray { 
-  background-color: black;
-}
-.lightgray {
-  background-color: rgb(52, 51, 57);
-}
 .lightpink {
   background-color: rgb(242, 196, 206);
 }
-/******************FORMATTING******************/
+/******************FORMATTING - GENERAL LAYOUT******************/
 section {
   width: 100vw;
   height: 100vh;
@@ -287,7 +225,6 @@ section {
 }
 .opening {
   background-color: black;
-  /*background-image: url("assets/opening.gif");*/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -302,11 +239,8 @@ video {
   margin: auto;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  /*height: 100%;
-  width: 177.77777778vh;
-  max-width: 100%;
-  max-height: 56.25vw;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .bio {
   background-color: black;
@@ -375,6 +309,7 @@ video {
   display: block;
   top: 20%;
 }
+/******************FORMATTING - SPECIFIC CONTENT******************/
 .bio button {
   background-color: transparent;
   padding: 0;
@@ -561,7 +496,7 @@ video {
 .footer .box {
   display: flex;
   align-items: flex-end;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .footer img {
   width: 80px;
@@ -593,7 +528,6 @@ p {
 .chat {
   display: block;
   color: rgb(242, 196, 206);
-  /*color: white;*/
   font-family: 'Calibri', 'Calibri Mac', sans-serif;
   font-weight: 600;
   font-size: 35px;
