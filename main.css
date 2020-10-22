@@ -94,7 +94,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 html {
-  scrollbar-width: none;  /* Firefox */
   scrollbar-base-color: rgb(242, 196, 206);
   scrollbar-face-color: rgb(242, 196, 206);
   scrollbar-3dlight-color: rgb(242, 196, 206);
