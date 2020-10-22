@@ -167,5 +167,9 @@
     $("html, body").animate({scrollTop: 0}, "slow");
     return false;
   });
+  $('.bar button.scroll_up').click(function() {
+    $("html, body").animate({scrollTop: 0}, "slow");
+    return false;
+  });
 });
   
